@@ -5,7 +5,7 @@ import com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader;
 import java.nio.ByteBuffer;
 import java.nio.ShortBuffer;
 
-class OpusDecoderLibrary {
+public class OpusDecoderLibrary {
     private OpusDecoderLibrary() {
 
     }
@@ -20,4 +20,6 @@ class OpusDecoderLibrary {
     native void destroy(long instance);
 
     native int decode(long instance, ByteBuffer directInput, int inputSize, ShortBuffer directOutput, int frameSize);
+
+    native int configure(long instance, int request, int value);
 }

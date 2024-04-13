@@ -36,7 +36,7 @@ public class LocalPlayerDemo {
 
         AudioPlayer player = manager.createPlayer();
 
-        manager.loadItem("ytsearch: zmvgDMe5Wxo", new FunctionalResultHandler(null, playlist -> {
+        manager.loadItem("ytsearch: D0HHqfZSdVs", new FunctionalResultHandler(null, playlist -> {
             AudioTrack audioTrack = playlist.getTracks().get(0);
 
             applyMakers(audioTrack);
